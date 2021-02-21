@@ -8,6 +8,7 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { KidsPageComponent } from './kids-page/kids-page.component';
 import { MenPageComponent } from './men-page/men-page.component';
 import { WomenPageComponent } from './women-page/women-page.component';
+import {FormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { WomenPageComponent } from './women-page/women-page.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
