@@ -6,6 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home-page.component.scss']
 })
 export class HomePageComponent implements OnInit {
+  count: number = 0;
+
+  counting() {
+    this.count++;
+  }
 
   constructor() { }
 
