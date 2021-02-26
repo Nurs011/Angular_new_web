@@ -9,6 +9,7 @@ import { KidsPageComponent } from './kids-page/kids-page.component';
 import { MenPageComponent } from './men-page/men-page.component';
 import { WomenPageComponent } from './women-page/women-page.component';
 import {FormsModule} from '@angular/forms';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import {FormsModule} from '@angular/forms';
     KidsPageComponent,
     MenPageComponent,
     WomenPageComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
