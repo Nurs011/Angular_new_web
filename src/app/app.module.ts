@@ -10,6 +10,7 @@ import { MenPageComponent } from './men-page/men-page.component';
 import { WomenPageComponent } from './women-page/women-page.component';
 import {FormsModule} from '@angular/forms';
 import { FooterComponent } from './footer/footer.component';
+import {MycustompipePipe} from './Pipes/my.pipe';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { FooterComponent } from './footer/footer.component';
     MenPageComponent,
     WomenPageComponent,
     FooterComponent,
+    MycustompipePipe,
   ],
   imports: [
     BrowserModule,

@@ -1,5 +1,5 @@
 <div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent" >
-  <h2 class="text-center" style="font-family: 'Acme', sans-serif;" >Select the section you are interested in</h2>
+  <h2 class="text-center" style="font-family: 'Acme', sans-serif;" >{{text | uppercase}}</h2>
   <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
     <div class="album ml-5">
       <div class="container">
@@ -45,6 +45,16 @@
     </div>
   </div>
 </div>
+<div style="text-align:center">
+Choose number : <input type='text' [(ngModel)] ="choice"/>
+<div  [ngSwitch]="choice">
+  <div *ngSwitchCase="'1'">Men</div>
+  <div *ngSwitchCase="'2'">Women</div>
+  <div *ngSwitchCase="'3'">Kids</div>
+  <div *ngSwitchDefault>Home</div>
+</div>
+</div>
+<br>
 <h4>{{ count }} item added to basket!</h4>
 <style> h4{text-align:center}</style>
 <div class="" style="width: 90%; margin-left: 5%; margin-top: 1%">
@@ -68,7 +78,7 @@
   </div>
 </div>
 <div class="" style="margin-left: 5%; width:90% ">
-  <h2 class="text-center" style="font-family: 'Acme', sans-serif;" >Top sales of the week</h2>
+  <h2 class="text-center" style="font-family: 'Acme', sans-serif;" >{{ msg| slice:4:26}}</h2>
   <div class="row">
     <div class="col">
       <div class="product-grid5">
