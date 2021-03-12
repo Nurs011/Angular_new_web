@@ -1,0 +1,40 @@
+<nav class="navbar" style="background-color: #000000">
+  <ul style="margin-top: -6px">
+    <li>
+      <a routerLink="men">Men clothes</a>
+    </li>
+    <li>
+      <a routerLink="women">Women clothes</a>
+    </li>
+    <li>
+      <a routerLink="kids">Kids clothes</a>
+    </li>
+    <li>
+      <input class="form-group" placeholder="search"[(ngModel)]="search">
+      <p [hidden]="!search">Мы ищем {{search}}</p>
+    </li>
+  </ul>
+</nav>
+<header class="blog-header  border-bottom" style="width: 90%; margin-left: 5%">
+  <div class="row flex-nowrap justify-content-between align-items-center">
+    <div></div>
+    <div class="col-4 text-center">
+      <a href="index.html"><h1  class="blog-header-logo text-dark" style="font-family: 'Acme', sans-serif;" routerLink="home" >Lamoda.kz</h1></a>
+    </div>
+    <div></div>
+  </div>
+</header>
+<div class="nav-scroller py-1 mb-2" style="width: 60%; margin-left: 5.5%">
+  <nav class="nav d-flex justify-content-between">
+
+    <a routerLink="home" class="p-2"><b>Home</b></a>
+    <a routerLink="men" class="p-2"><b>Men</b></a>
+    <a routerLink="women" class="p-2"><b>Women</b></a>
+    <a routerLink="kids" class="p-2"><b>Kids</b></a>
+
+  </nav>
+</div>
+
+
+
+
