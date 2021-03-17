@@ -6,14 +6,19 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
   styleUrls: ['./kids-page.component.scss']
 })
 export class KidsPageComponent implements OnInit {
+  count: number = 0;
+  counting(){
+    this.count++;
+  }
   @Output() countBuying = new EventEmitter();
   Buying(): void {
     alert('The clothes was buyed');
-    this.countBuying.emit();
+    this.counting();
   }
 
   constructor() { }
   ngOnInit(): void {
   }
+
 
 }
