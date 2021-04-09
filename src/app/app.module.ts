@@ -13,6 +13,10 @@ import { FooterComponent } from './footer/footer.component';
 import {MycustompipePipe} from './Pipes/my.pipe';
 import {ProductService} from './services/product.service';
 import {LoggingService} from './services/logging.service';
+import { AdminPageComponent } from './admin-page/admin-page.component';
+import { LoginPageComponent } from './login-page/login-page.component';
+
+
 
 @NgModule({
   declarations: [
@@ -24,6 +28,8 @@ import {LoggingService} from './services/logging.service';
     WomenPageComponent,
     FooterComponent,
     MycustompipePipe,
+    AdminPageComponent,
+    LoginPageComponent,
   ],
   imports: [
     BrowserModule,

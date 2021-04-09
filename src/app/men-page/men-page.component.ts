@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./men-page.component.scss']
 })
 export class MenPageComponent implements OnInit {
+  isDirty = true;
 
   constructor() { }
 
