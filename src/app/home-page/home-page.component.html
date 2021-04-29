@@ -46,15 +46,7 @@
     </div>
   </div>
 </div>
-<div style="text-align:center">
-Choose number : <input type='text' [(ngModel)] ="choice"/>
-<div  [ngSwitch]="choice">
-  <div *ngSwitchCase="'1'">Men</div>
-  <div *ngSwitchCase="'2'">Women</div>
-  <div *ngSwitchCase="'3'">Kids</div>
-  <div *ngSwitchDefault>Home</div>
-</div>
-</div>
+
 <br>
 <!--<h4>{{ count }} item added to basket!</h4>-->
 <!--<style> h4{text-align:center}</style>-->
@@ -95,71 +87,103 @@ Choose number : <input type='text' [(ngModel)] ="choice"/>
 <hr>
 <div class="" style="margin-left: 5%; width:90% ">
   <h2 class="text-center" style="font-family: 'Acme', sans-serif;" >{{ msg| slice:4:26}}</h2>
-  <div class="row">
-    <div class="col">
-      <div class="product-grid5">
-        <div >
-          <a routerLink="/men">
-            <img class="pic-1" src="https://cdn.bike24.net/i/mb/7b/59/e0/340516-00-d-721224.jpg" >
-          </a>
-        </div>
-        <div class="product-content">
-          <h3 class="title text-center"><a routerLink="/men">Reebok hoody</a></h3>
-          <div class="price text-center">25.000tg</div>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="product-grid5">
-        <div >
-          <a routerLink="/men">
-            <img class="pic-1" src="https://assets.reebok.com/images/w_600,f_auto,q_auto/cbc821deff2b40debbdeab6c0031277b_9366/Classics_Vector_Full-Zip_Hoodie_Black_FT7299_01_standard.jpg">
-          </a>
-        </div>
-        <div class="product-content">
-          <h3 class="title text-center"><a routerLink="/men">Jeans for men</a></h3>
-          <div class="price text-center">14.999tg</div>
+  <div class="" style="margin-left: 5%; width:90% ">
+    <h3 class="text-left p-3">Popular this season</h3>
+    <div class="row">
+      <div class="col">
+        <div class="product-grid5">
+          <div class="product-image5">
+            <a href="women">
+              <img class="pic-1" src="https://a.lmcdn.ru/img600x866/R/T/RTLAAE747901_13741205_1_v1.jpg">
+              <img class="pic-2" src="https://a.lmcdn.ru/img600x866/R/T/RTLAAE747901_13741206_2_v1.jpg">
+            </a>
+            <ul class="social">
+              <li><a href="women" data-tip="Quick View"><i class="fa fa-search"></i></a></li>
+              <li><a href="women" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+            </ul>
+            <a href="women" class="select-options"><i class="fa fa-arrow-right"></i> Select Options</a>
+          </div>
+          <div class="product-content">
+            <h3 class="title text-center"><a href="women">Jeans for women</a></h3>
+            <div class="price text-center">22,999 tg</div>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="col">
-      <div class="product-grid5">
-        <div >
-          <a routerLink="/women">
-            <img class="pic-1" src="https://assets.reebok.com/images/w_600,f_auto,q_auto/8028c029cbb94d65a3cfabce004061f7_9366/Training_Essentials_Logo_Hoodie_Black_FU2241_01_standard.jpg">
-          </a>
-        </div>
-        <div class="product-content">
-          <h3 class="title text-center"><a routerLink="/women">Sports wear for women</a></h3>
-          <div class="price text-center">59.990tg</div>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="product-grid5">
-        <div >
-          <a routerLink="/women">
-            <img class="pic-1" src="https://go3.imgsmail.ru/imgpreview?key=71746a146149d105&mb=storage&w=540">
-          </a>
-        </div>
-        <div class="product-content">
-          <h3 class="title text-center"><a routerLink="/women">Set for women</a></h3>
-          <div class="price text-center">99.990tg</div>
+      <div class="col">
+        <div class="product-grid5">
+          <div class="product-image5">
+            <a href="men">
+              <img class="pic-1" src="https://a.lmcdn.ru/img600x866/R/T/RTLAAC820101_13691481_2_v1_2x.jpg">
+              <img class="pic-2" src="https://a.lmcdn.ru/img600x866/R/T/RTLAAC820101_13691482_3_v1_2x.jpg">
+            </a>
+            <ul class="social">
+              <li><a href="men" data-tip="Quick View"><i class="fa fa-search"></i></a></li>
+              <li><a href="men" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+            </ul>
+            <a href="men" class="select-options"><i class="fa fa-arrow-right"></i> Select Options</a>
+          </div>
+          <div class="product-content">
+            <h3 class="title text-center"><a href="men">Sports pants for men</a></h3>
+            <div class="price text-center">42,500 tg</div>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="col">
-      <div class="product-grid5">
-        <div >
-          <a routerLink="/men">
-            <img class="pic-1" src="https://fashionapp.ru/wp-content/uploads/fly-images/7712/s-chem-nosit-muzhskoj-kardigan5-330x330-c.jpg">
-          </a>
+      <div class="col">
+        <div class="product-grid5">
+          <div class="product-image5">
+            <a href="women">
+              <img class="pic-1" src="https://a.lmcdn.ru/img600x866/M/P/MP002XW05P2Q_13479785_1_v1.jpeg">
+              <img class="pic-2" src="https://a.lmcdn.ru/img600x866/M/P/MP002XW05P2Q_13479788_3_v1.jpeg">
+            </a>
+            <ul class="social">
+              <li><a href="women" data-tip="Quick View"><i class="fa fa-search"></i></a></li>
+              <li><a href="women" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+            </ul>
+            <a href="women" class="select-options"><i class="fa fa-arrow-right"></i> Select Options</a>
+          </div>
+          <div class="product-content">
+            <h3 class="title text-center"><a href="women">Jacket for women</a></h3>
+            <div class="price text-center">17,800 tg</div>
+          </div>
         </div>
-        <div class="product-content">
-          <h3 class="title text-center"><a routerLink="/men">Cardigan for men</a></h3>
-          <div class="price text-center">9990tg</div>
+      </div>
+      <div class="col">
+        <div class="product-grid5">
+          <div class="product-image5">
+            <a href="#">
+              <img class="pic-1" src="https://a.lmcdn.ru/img600x866/A/D/AD093EMLWYH7_13958560_2_v1_2x.jpg">
+              <img class="pic-2" src="https://a.lmcdn.ru/img600x866/A/D/AD093EMLWYH7_13958561_3_v1_2x.jpg">
+            </a>
+            <ul class="social">
+              <li><a href="men" data-tip="Quick View"><i class="fa fa-search"></i></a></li>
+              <li><a href="men" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+            </ul>
+            <a href="men" class="select-options"><i class="fa fa-arrow-right"></i> Select Options</a>
+          </div>
+          <div class="product-content">
+            <h3 class="title text-center"><a href="men">Hoodie for men</a></h3>
+            <div class="price text-center">15,600 tg</div>
+          </div>
         </div>
-
+      </div>
+      <div class="col">
+        <div class="product-grid5">
+          <div class="product-image5">
+            <a href="#">
+              <img class="pic-1" src="https://a.lmcdn.ru/img600x866/M/P/MP002XW05GAZ_13343278_1_v1.jpeg">
+              <img class="pic-2" src="https://a.lmcdn.ru/img600x866/M/P/MP002XW05GAZ_13343279_3_v1.jpeg">
+            </a>
+            <ul class="social">
+              <li><a href="" data-tip="Quick View"><i class="fa fa-search"></i></a></li>
+              <li><a href="" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+            </ul>
+            <a href="women" class="select-options"><i class="fa fa-arrow-right"></i> Select Options</a>
+          </div>
+          <div class="product-content">
+            <h3 class="title text-center"><a href="women">Leather Jacket for Women</a></h3>
+            <div class="price text-center">38,999 tg</div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -188,7 +212,50 @@ Choose number : <input type='text' [(ngModel)] ="choice"/>
   </div>
 
 
+  <div class="container mt-5">
+    <div class="row blog">
+      <div class="col-md-12">
+        <div id="blogCarousel" class="carousel slide" data-ride="carousel">
+          <h3 class="text-center">Our partners</h3>
+          <ol class="carousel-indicators">
+            <li data-target="#blogCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#blogCarousel" data-slide-to="1"></li>
+          </ol>
+
+          <!-- Carousel items -->
+          <div class="carousel-inner">
+
+            <div class="carousel-item active">
+              <div class="row">
+                <div class="col-md-3">
+                  <a href="home">
+                    <img src="https://res-2.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_256,w_256,f_auto,q_auto:eco/hdkfwqimvagxinywpoqm" alt="Image" style="max-width:100%; width: 250px; height: 250px">
+                  </a>
+                </div>
+                <div class="col-md-3">
+                  <a href="home">
+                    <img src="https://content.asos-media.com/-/media/homepages/unisex/brands/256x256/nike-hp-logos-256x256.jpg" alt="Image" style="max-width:100%;width: 250px; height: 250px">
+                  </a>
+                </div>
+                <div class="col-md-3">
+                  <a href="home">
+                    <img src="https://img.ecumena.com/media/images/common/category_image/256x256_canvas/da271d2a66ce8e1753c26e3ca5d637ecf52e6de7.jpg" alt="Image" style="max-width:100%;width: 250px; height: 250px">
+                  </a>
+                </div>
+                <div class="col-md-3">
+                  <a href="home">
+                    <img src="https://img.ecumena.com/media/images/common/category_image/256x256_canvas/5bf301038bcde2a762a6fb16ad480f4dc7b98ca0.jpg" alt="Image" style="max-width:100%; width: 250px; height: 250px">
+                  </a>
+                </div>
+              </div>
+              <!--.row-->
+            </div>
+            <!--.item-->
+          </div>
+          <!--.carousel-inner-->
+        </div>
+
+
 
 </div>
-
 
